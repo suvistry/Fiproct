@@ -1,108 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>Form</title>
 </head>
-<main>
 <body>
-    <div class="container py-4">
-    <header class="pb-3 mb-4 border-bottom">
-        <h2 class="fs-4">BOOTSTRAP</h2>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">KABAR JOGJA</a>
+                <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                        aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Politik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Olahraga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kesehatan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Musik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> 
+                    </div>
+                </nav>
+            </div>
+            </div>
+        </nav>
     </header>
-    <div class="p-5 h-100 bg-body-tertiary border rounded-3">
-        <div class="container-fluid py-5 text-center">
-        <h1 class="display-5 fw-bold">Table dan Form pada Bootstrap</h1>
-        <p class="text-center">Halaman ini dibuat untuk menampilkan tabel dan formulir yang dibuat dengan komponen-komponen bootstrap</p>
-        <button class="btn btn-primary btn-lg" type="button">Klik Untuk melihat Form</button>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2500">
+                <img src="candi.jpg" class="d-block w-100" alt="candi">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Second slide label</h1>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    <p><a class="btn btn-lg btn-primary">Click</a></p>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="malioboro.jpg" class="d-block w-100" alt="malioboro">
+                <div class="carousel-caption d-none d-md-block">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="olahraga.jpg" class="d-block w-100" alt="olahraga">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="pantai.jpg" class="d-block w-100" alt="pantai">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="politik.jpg" class="d-block w-100" alt="politik">
+            </div>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+            </div>
+        </div>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="containe">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card shadow-ms">
+                    <img src="olahraga.jpg" />
+                    <div class="card-body">
+                        <h4><a href="Judul berita olahraga 1"></a></h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead in to additional content. This content is a little bit longer.</p>
+                    <div class="d-flex justify-content-end-align-items-center">
+                        <button type="button" class="btn btn-info">Selengkapnya</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-ms">
+                        <img src="olahraga.jpg" />
+                        <div class="card-body">
+                            <h4><a href="Judul berita olahraga 1"></a></h4>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-end-align-items-center">
+                            <button type="button" class="btn btn-info">Selengkapnya</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-ms">
+                            <img src="olahraga.jpg" />
+                            <div class="card-body">
+                                <h4><a href="Judul berita olahraga 1"></a></h4>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-end-align-items-center">
+                                <button type="button" class="btn btn-info">Selengkapnya</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-ms">
+                                <img src="olahraga.jpg" />
+                                <div class="card-body">
+                                    <h4><a href="Judul berita olahraga 1"></a></h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-end-align-items-center">
+                                    <button type="button" class="btn btn-info">Selengkapnya</button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="table-responsive">
-    <table class="table table-hover table-bordered table-striped caption-top">
-        <caption>Tabel di bawah ini terdari dari 7 baris dan 7 kolom.</caption>
-        <thead class="table-dark">
-        <tr>
-            <th scope="col">No</th>
-            <th scope="col">Nama Depan</th>
-            <th scope="col">Nama Belakang</th>
-            <th scope="col">Akun Medsos</th>
-            <th scope="col">Usia</th>
-            <th scope="col">Alamat</th>
-            <th scope="col">Perusahaan</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Kemas</td>
-            <td>Arkaansyah</td>
-            <td>@kersyah</td>
-            <td>18</td>
-            <td>Jambi </td>
-            <td>Amazon</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jack</td>
-            <td>Znyder</td>
-            <td>@Jnyck</td>
-            <td>42</td>
-            <td>Alfansi</td>
-            <td>DC</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Khairun</td>
-            <td>Mas</td>
-            <td>@Mahirn</td>
-            <td>22</td>
-            <td>Magelang</td>
-            <td>Paypal</td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>Budi</td>
-            <td>Setiawan</td>
-            <td>@Btiwan</td>
-            <td>25</td>
-            <td>Bandung</td>
-            <td>AQUA</td>
-        </tr>
-        <tr>
-            <th scope="row">5</th>
-            <td>Karin</td>
-            <td>Yasmin</td>
-            <td>@Kasmin</td>
-            <td>22</td>
-            <td>Telanaipura</td>
-            <td>Siloam</td>
-        </tr>
-        <tr>
-            <th scope="row">6</th>
-            <td>Marjan</td>
-            <td>Erma</td>
-            <td>@Marma</td>
-            <td>19</td>
-            <td>Tengal</td>
-            <td>Marjan</td>
-        </tr>
-        <tr>
-            <th scope="row">7</th>
-            <td>Adam</td>
-            <td>Barakalah</td>
-            <td>@Akalah</td>
-            <td>21</td>
-            <td>Banten</td>
-            <td>Umrah</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-</main>
-    
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to Top</a></p>
+        <p>&copy; 2017-2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">terms</a></p>
+    </footer>
+
+    </main>
 </body>
 </html>
